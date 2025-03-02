@@ -1,0 +1,13 @@
+# config.yaml
+
+
+buffer_radius: 50  # Buffer size in meters
+start_date: "2021-06-01"
+end_date: "2021-07-23"
+cloud_threshold: 30  # Max % cloud cover
+output_dir: "data/processed/"  # Folder to save results
+input_data: "data/raw/Training_data_uhi_index_2025-02-18.csv"
+bounds : [-74.01, 40.75, -73.86, 40.88]
+sentinel_bands: ["B01","B06","B03", "B04", "B08", "B11", "SCL"] # coastal, rededge,green, red, nir, swir16, scene classification
+landsat_bands: ["green","red", "nir08", "swir16", "lwir11", "qa"] # green, red, nir, swir16, lwir11, qa
+resolution: 30  # Resolution in meters
